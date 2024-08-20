@@ -134,3 +134,25 @@ X_train, X_test, y_train, y_test = train_test_split(X,
 
 <hr>
 <br>
+
+### 3. Binary Classification + nn.Sequential
+
+#### 원형 데이터 만들기
+
+```python
+    make_circles
+```
+
+<hr>
+<br>
+
+#### torch.nn.**BCELoss**() <- should be used with sigmoid (nn.Sigmoid + nn.BCELoss)<br><br> : Binary cross-entropy
+
+<br>
+
+<hr>
+<br>
+
+#### torch.nn.**BCEWithLogitsLoss**() <- more numerically stable (than nn.Sigmoid + nn.BCELoss)<br><br> : Binary cross-entropy **with built-in Sigmoid**
+
+<br>
